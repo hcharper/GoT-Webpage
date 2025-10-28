@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game of Thrones Tribute</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Game of Thrones</h1>
+
+  <!-- FULL-SCREEN MAP BACKGROUND -->
+  <div class="map-bg"></div>
+
+  <!-- DRAGONGLASS TOP BANNER -->
+  <header class="dragonglass top">
+    <div class="logo">GoT Tribute</div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Valar Dohaeris</h1>
+    <p>All men must serve… the fire.</p>
+  </section>
+
+  <!-- DRAGON TRIGGER SECTION -->
+  <section class="dragon-trigger" id="dragon-trigger">
+    <h2>Scroll down to awaken the dragons…</h2>
+  </section>
+
+  <!-- DRAGONS (OFF-SCREEN INITIALLY) -->
+  <img class="dragon dragon1" src="assets/dragon1.png" alt="Dragon 1">
+  <img class="dragon dragon2" src="assets/dragon2.png" alt="Dragon 2">
+  <img class="dragon dragon3" src="assets/dragon3.png" alt="Dragon 3">
+
+  <!-- FIRE CANVAS -->
+  <canvas id="fire-canvas"></canvas>
+
+  <!-- QUOTE ROTATOR -->
+  <aside class="quote-rotator" id="quote-rotator">
+    <blockquote></blockquote>
+    <cite></cite>
+  </aside>
+
+  <!-- DRAGONGLASS FOOTER -->
+  <footer class="dragonglass bottom">
+    <p>© 2025 Your Name – A tribute to <em>Game of Thrones</em></p>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
