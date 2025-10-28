@@ -21,7 +21,7 @@ body {
   width: 100%;
   height: 100%;
   background: url('/assets/map.svg') center/cover no-repeat;
-  opacity: 0.15;
+  opacity: 0.5;
   z-index: -2;
   pointer-events: none;
 }
@@ -29,8 +29,8 @@ body {
 /* DRAGONGLASS BANNERS */
 .dragonglass {
   background: linear-gradient(135deg, #1a1a1a, #2c2c2c, #1a1a1a);
-  border: 2px solid #0a0a0a;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  border: 20px solid #0a0a0a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
   padding: 1rem;
   text-align: center;
@@ -74,10 +74,12 @@ body {
   padding: 6rem 2rem;
   text-align: center;
   font-size: 1.8rem;
-  min-height: 60vh;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 /* DRAGONS */
@@ -112,12 +114,27 @@ body {
 /* FIRE CANVAS */
 #fire-canvas {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
   z-index: 99;
   opacity: 0;
+}
+
+/* IRON THRONE */
+.iron-throne {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.iron-throne img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border: 3px solid #1a1a1a;
+  border-radius: 10px;
 }
 
 /* QUOTE ROTATOR */
@@ -154,4 +171,5 @@ body {
   .dragon { width: 180px; }
   .dragon3 { width: 220px; }
   .quote-rotator { padding: 1rem; font-size: 0.9rem; }
+  #fire-canvas { height: 100px; }
 }
